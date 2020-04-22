@@ -7,36 +7,34 @@
 
     <!-- Template Main CSS File -->
     <link href="style.css" rel="stylesheet">
+
   </Head>
   <Body>
 
     <nav class="navbar navbar-custom" >
-
-      <div class="dropdown">
-        <button class="dropbtn"> Dining Halls
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Bates</a>
-          <a href="#">Lulu</a>
-          <a href="#">Pomeroy</a>
-          <a href="#">Tower</a>
-          <a href="#">Stone-Davis</a>
-        </div>
-      </div>
-
-      <a href="frontpage.html" class="navbar-brand" text-align: center>Wellesley ReFresh</a>
-      <!--center the title name-->
-
-      <!--put links to the menus where it changes what appears for breakfast-->
-
-      
+      <a href="frontpage.html" class="navbar-brand" style="text-align: center">Wellesley ReFresh</a>
     </nav>
+
+    <div>
+      <br>
+      <br>
+      <br>
+    <h2>Today is March 10th, 2020</h2>
+    <div class="dropdown">
+      <h2>Nearest dining hall: <a id="location" onclick="toggleLocationMenu()" class="dropbtn" style="color:limegreen;">Bates</a></h2>
+      <div id="locationDropdown" class="dropdown-content">
+        <a href="#" onclick="changeLocation('Bates')">Bates</a>
+        <a href="#" onclick="changeLocation('Lulu')">Lulu</a>
+        <a href="#" onclick="changeLocation('Pom')">Pomeroy</a>
+        <a href="#" onclick="changeLocation('Tower')">Tower</a>
+        <a href="#" onclick="changeLocation('Stone-D')">Stone-Davis</a>
+      </div>
+    </div>
+    <h2>Meal Time: Breakfast</h2>
     <br>
     <br>
-    <br>
-    <h2>Today is March 10th, 2020  <br> Closest dining hall: Bates <br> Meal Time: Breakfast <br> </h2>
-    <br>
-    <br>
+
+  </div>
     <div class="container">
       <div class="item" font-size: 40px text-align: center>Beignet</div>
       <div class="item eggs milk"font-size: 40px text-align: center >Cheese Omelet</div>
@@ -68,23 +66,11 @@
       <button type="button" class="btn btn-secondary closebtn" onclick="openNav()">Filters
       </button>
 
-      <a class="nav-link" href="#">Community</a>
+      <a class="nav-link" href="community.html">Community</a>
 
-      <a class="nav-link" href="#">Contact Us</a>
+      <a class="nav-link" href="contact.html">Contact Us</a>
       <!--filters is a dropup button-->
     </nav>
-
-    <script>
-    /* Set the width of the side navigation to 250px */
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
-
-    /* Set the width of the side navigation to 0 */
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-
-    </script>
+    <script src="main.js"></script>
   </Body>
 </HTML>
