@@ -1,0 +1,93 @@
+<HTML>
+  <Head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="style.css" rel="stylesheet">
+  </Head>
+  <Body>
+
+    <nav class="navbar navbar-custom" >
+
+      <div class="dropdown">
+        <button class="dropbtn"> Dining Halls
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Bates</a>
+          <a href="#">Lulu</a>
+          <a href="#">Pomeroy</a>
+          <a href="#">Tower</a>
+          <a href="#">Stone-Davis</a>
+        </div>
+      </div>
+
+      <a href="frontpage.html" class="navbar-brand" text-align: center>Wellesley ReFresh</a>
+      <!--center the title name-->
+
+      <!--put links to the menus where it changes what appears for breakfast-->
+
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <h2>Today is March 10th, 2020  <br> Closest dining hall: Bates <br> Meal Time: Breakfast <br> </h2>
+    <br>
+    <br>
+    <div class="container">
+      <div class="item" font-size: 40px text-align: center>Beignet</div>
+      <div class="item eggs milk"font-size: 40px text-align: center >Cheese Omelet</div>
+      <div class="item"font-size: 40px text-align: center >Scrambled Tofu</div>
+    </div>
+
+    <!--put the link to the other pages for the meal items-->
+    <!--fix the buttons and the containers so we can filter-->
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+      <div class="btn-group sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="filters" class="filters">
+          <h3> Special Diets </h3>
+          <a href = '#' data-filter=".vegan">Vegan</a>
+          <a href = '#' data-filter=".gluten">Gluten Sensitive</a>
+          <a href = '#' data-filter=".veg">Vegetarian</a>
+          <div class="dropdown-divider"></div>
+          <h3> Allergens </h3>
+          <a href = '#' data-filter=".eggs">Eggs</a>
+          <a href = '#' data-filter=".milk">Milk</a>
+          <a href = '#' data-filter=".peanuts">Peanuts</a>
+          <a href = '#' data-filter=".shellfish">Shellfish</a>
+          <a href = '#' data-filter=".soy">Soy</a>
+          <a href = '#' data-filter=".tree_nut">Tree Nut</a>
+          <a href = '#' data-filter=".wheat">Wheat</a>
+          <a href = '#' data-filter=".garlic">Garlic</a>
+        </div>
+      </div>
+      <button type="button" class="btn btn-secondary closebtn" onclick="openNav()">Filters
+      </button>
+
+      <a class="nav-link" href="#">Community</a>
+
+      <a class="nav-link" href="#">Contact Us</a>
+      <!--filters is a dropup button-->
+    </nav>
+
+    <script>
+    /* Set the width of the side navigation to 250px */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    </script>
+  </Body>
+</HTML>
