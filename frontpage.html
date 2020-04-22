@@ -19,7 +19,7 @@
       <br>
       <br>
       <br>
-    <h2>Today is March 10th, 2020</h2>
+    <h2>Today is: <span id="date" style="color:limegreen;">Current Date</span></h2>
     <div class="dropdown">
       <h2>Nearest dining hall: <a id="location" onclick="toggleLocationMenu()" class="dropbtn" style="color:limegreen;">Bates</a></h2>
       <div id="locationDropdown" class="dropdown-content">
@@ -30,47 +30,56 @@
         <a href="#" onclick="changeLocation('Stone-D')">Stone-Davis</a>
       </div>
     </div>
-    <h2>Meal Time: Breakfast</h2>
+    <h2>Meal Time: <span id="mealTime" style="color:limegreen;">Breakfast</span></h2>
     <br>
     <br>
-
   </div>
+
     <div class="container">
-      <div class="item" font-size: 40px text-align: center>Beignet</div>
-      <div class="item eggs milk"font-size: 40px text-align: center >Cheese Omelet</div>
-      <div class="item"font-size: 40px text-align: center >Scrambled Tofu</div>
+      <div class="filterDiv eggs milk">Beignet</div>
+      <div class="filterDiv eggs milk">Cheese Omelet</div>
+      <div class="filterDiv vegan vegetarian">Scrambled Tofu</div>
+      <div class="filterDiv vegan vegetarian">Fruit</div>
+
+      <div class="filterDiv eggs milk">Beignet</div>
+      <div class="filterDiv eggs milk">Cheese Omelet</div>
+      <div class="filterDiv vegan vegetarian">Scrambled Tofu</div>
+      <div class="filterDiv vegan vegetarian">Fruit</div>
     </div>
+
 
     <!--put the link to the other pages for the meal items-->
     <!--fix the buttons and the containers so we can filter-->
     <nav class="navbar fixed-bottom navbar-light bg-light">
       <div class="btn-group sidenav" id="mySidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <p class="closebtn" onclick="closeNav()">&times;</p>
         <div id="filters" class="filters">
-          <h3> Special Diets </h3>
-          <a href = '#' data-filter=".vegan">Vegan</a>
-          <a href = '#' data-filter=".gluten">Gluten Sensitive</a>
-          <a href = '#' data-filter=".veg">Vegetarian</a>
+          <h3>  Special Diets</h3>
+          <a class="filterBtn" onclick="filterSelection('glutenSensitive')">Gluten Sensitive</a>
+          <a class="filterBtn" onclick="filterSelection('vegetarian')">Vegetarian</a>
+          <a class="filterBtn" onclick="filterSelection('vegan')">Vegan</a>
           <div class="dropdown-divider"></div>
-          <h3> Allergens </h3>
-          <a href = '#' data-filter=".eggs">Eggs</a>
-          <a href = '#' data-filter=".milk">Milk</a>
-          <a href = '#' data-filter=".peanuts">Peanuts</a>
-          <a href = '#' data-filter=".shellfish">Shellfish</a>
-          <a href = '#' data-filter=".soy">Soy</a>
-          <a href = '#' data-filter=".tree_nut">Tree Nut</a>
-          <a href = '#' data-filter=".wheat">Wheat</a>
-          <a href = '#' data-filter=".garlic">Garlic</a>
+          <h3>  Allergens</h3>
+          <a class="filterBtn" onclick="filterSelection('eggs')">Eggs</a>
+          <a class="filterBtn" onclick="filterSelection('milk')">Milk</a>
+          <a class="filterBtn" onclick="filterSelection('peanuts')">Peanuts</a>
+          <a class="filterBtn" onclick="filterSelection('shellfish')">Shellfish</a>
+          <a class="filterBtn" onclick="filterSelection('soy')">Soy</a>
+          <a class="filterBtn" onclick="filterSelection('garlic')">Garlic</a>
+          <a class="filterBtn" onclick="filterSelection('treeNut')">Tree Nut</a>
+          <a class="filterBtn" onclick="filterSelection('wheat')">Wheat</a>
+          <div class="dropdown-divider"></div>
+          <a class="filterBtn" onclick="filterSelection('all')">Remove Filters</a>
         </div>
       </div>
-      <button type="button" class="btn btn-secondary closebtn" onclick="openNav()">Filters
-      </button>
+
+      <button type="button" class="btn btn-secondary closebtn" onclick="openNav()">Filters</button>
 
       <a class="nav-link" href="community.html">Community</a>
 
       <a class="nav-link" href="contact.html">Contact Us</a>
-      <!--filters is a dropup button-->
     </nav>
+
     <script src="main.js"></script>
   </Body>
 </HTML>

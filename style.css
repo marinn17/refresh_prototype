@@ -1,85 +1,85 @@
-    body {
-      background-color: cornsilk;
-    }
-    h2 {
-      text-align: center;
-      /* font-size: 50px; */
-    }
-    p {
-      text-align: center;
-      font-size: 40px;
-    }
-    .navbar-custom {
-      background-color: white;
-    }
+body {
+  background-color: cornsilk;
+}
+h2 {
+  text-align: center;
+  /* font-size: 50px; */
+}
+p {
+  text-align: center;
+  font-size: 40px;
+}
+.navbar-custom {
+  background-color: white;
+}
 
 
-  /*
-  .dropdown-content {
-    display: none;
-    position:relative;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
+/*
+.dropdown-content {
+display: none;
+position:relative;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+display: block;
+}
 
 
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-  } */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
 
 
-  .dropbtn {
-    /* background-color: #3498DB; */
-    /* color: white; */
-    /* padding: 16px; */
-    /* font-size: 16px; */
-    border: none;
-    cursor: pointer;
-  }
+.dropdown:hover .dropbtn {
+background-color: #3e8e41;
+} */
+
+
+.dropbtn {
+/* background-color: #3498DB; */
+/* color: white; */
+/* padding: 16px; */
+/* font-size: 16px; */
+border: none;
+cursor: pointer;
+}
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-  /* background-color: #f1f1f1; */
+/* background-color: #f1f1f1; */
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
-  /* display: inline-block; */
-  text-align: center;
+position: relative;
+/* display: inline-block; */
+text-align: center;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: relative;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+display: none;
+position: relative;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
 }
 
 /* Change color of dropdown links on hover */
@@ -88,87 +88,143 @@
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-  .filters a {
-    color: #000;
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: relative;
-  }
 
-  .filters a:hover, .filters a:focus, .filters a:active {
-    text-decoration: none;
-  }
 
-  .filters a:hover:before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 0;
-    height: 1px;
-    background-color: #000;
-  }
 
-  .filters a.active {
-    color: #000;
-  }
 
-  .filters a.active:before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 0;
-    height: 1px;
-    background-color: #000;
-  }
-  /* The side navigation menu */
-  .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
+/*  .filters a {
+color: #000;
+display: inline-block;
+padding-left: 10px;
+padding-right: 10px;
+position: relative;
+}*/
 
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
+/* .filters a:hover, .filters a:focus, .filters a:active {
+text-decoration: none;
+}*/
 
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
+/* .filters a:hover:before {
+content: "";
+position: absolute;
+left: 10px;
+right: 10px;
+bottom: 0;
+height: 1px;
+background-color: #000;
+}*/
+/*
+.filters a.active {
+color: #000;
+}*/
 
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
 
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
+/* The side navigation menu */
+.sidenav {
+height: 100%; /* 100% Full-height */
+width: 0; /* 0 width - change this with JavaScript */
+position: fixed; /* Stay in place */
+z-index: 1; /* Stay on top */
+top: 0; /* Stay at the top */
+left: 0;
+background-color: #111; /* Black*/
+overflow-x: hidden; /* Disable horizontal scroll */
+padding-top: 60px; /* Place content 60px from the top */
+transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav h3 {
+color: #ddd;
+margin: auto;
+padding: 10px;
+}
+/* The navigation menu links */
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 18px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
 
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+color: #f1f1f1;
+background-color: #ddd;
+cursor: pointer;
+}
+.sidenav p {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 18px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+.sidenav p:hover {
+color: #f1f1f1;
+cursor: pointer;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/* #main {
+transition: margin-left .5s;
+padding: 20px;
+}*/
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+
+
+
+.container {
+overflow: hidden;
+}
+
+.filterDiv {
+float: right;
+background-color: #2196F3;
+color: #ffffff;
+width: 200px;
+line-height: 100px;
+text-align: center;
+margin: 2px;
+display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+display: block;
+}
+
+/* Style the buttons */
+.filterBtn {
+}
+
+/* Add a light grey background on mouse-over */
+.filterBtn:hover {
+}
+
+/* Add a dark background to the active button */
+.filterBtn.active {
+background-color: white;
+color: black;
+}
